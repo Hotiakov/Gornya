@@ -9,4 +9,12 @@ $(document).ready(function () {
 	$('.header__link').click(function (event) {
 		$('.header__burger,.header__menu').toggleClass('active');
 	});
+	$(".create__images-item").click(function (e) {
+		e.preventDefault();
+		$(".create__images-item").removeClass('active');
+		$(this).addClass('active');
+		let clickId = $(this).attr('id');
+		$('.create__image img').attr('src', "img/create/" + clickId + ".jpg");
+		$('.create__image source').attr('srcset', "img/create/" + clickId + ".webp");
+	});
 });
