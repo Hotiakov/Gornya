@@ -754,6 +754,43 @@ section {
   color: #4F5662;
 }
 
+.contacts_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_icon {
+  width: 23px;
+  height: 23px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.contact_icon.fb {
+  margin-right: 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .contacts_icons {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+}
+
+.hero .contacts_icons .contact_icon {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 9px;
@@ -1027,6 +1064,26 @@ section {
 
   .organisation__item.second {
     margin: 0;
+  }
+
+  .hero .contacts_icons .contact_icon {
+    margin-right: 30px;
+  }
+
+  .hero .contacts_icons .contact_icon.fb {
+    margin-right: 0;
+  }
+
+  .hero .contacts_icons {
+    margin-top: 30px;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
