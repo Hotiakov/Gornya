@@ -17,4 +17,16 @@ $(document).ready(function () {
 		$('.create__image img').attr('src', "img/create/" + clickId + ".jpg");
 		$('.create__image source').attr('srcset', "img/create/" + clickId + ".webp");
 	});
+	$('a[href^="#"').on('click', function () {
+
+		let href = $(this).attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(href).offset().top
+		}, {
+			duration: 400,   // по умолчанию «400» 
+			easing: "linear" // по умолчанию «swing» 
+		});
+		return false;
+	});
 });
