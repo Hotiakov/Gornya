@@ -447,6 +447,24 @@ section {
   transition: all 0.5s;
 }
 
+.copy_link_mess {
+  border-radius: 5px;
+  background: #1DA1F2;
+  color: #fff;
+  position: fixed;
+  padding: 15px 30px;
+  z-index: 99;
+  bottom: 30px;
+  left: 50%;
+  font-size: 2rem;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+}
+
 .move {
   padding-bottom: 24rem;
   background: url("../img/move/move-lady.jpg") right top/30% no-repeat;
@@ -1214,6 +1232,12 @@ section {
 
   .create__image {
     width: 100%;
+  }
+
+  .copy_link_mess {
+    width: 90%;
+    padding: 15px 0;
+    text-align: center;
   }
 
   .move .btn-contact {
