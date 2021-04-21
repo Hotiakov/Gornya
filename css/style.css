@@ -224,6 +224,7 @@ section {
   color: #fff;
   background-color: #4FBEE4;
   text-decoration: none;
+  text-align: center;
 }
 
 .btn-contact:active {
@@ -269,6 +270,7 @@ section {
 .support__step {
   background: -o-linear-gradient(359.58deg, #50C6EE 0%, rgba(253, 254, 255, 0) 70%) center no-repeat;
   background: linear-gradient(90.42deg, #50C6EE 0%, rgba(253, 254, 255, 0) 70%) center no-repeat;
+  background-size: 100% 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +390,9 @@ section {
 
 .create__images-item .create__image-frame img {
   width: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .create__images-item span {
@@ -407,8 +412,16 @@ section {
   transition: all 0.5s;
 }
 
+.create__images-item.active .create__image-frame img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .create__images-item.active span {
-  color: #0CE2FF;
+  color: #01338e;
+  text-decoration: underline;
+  font-weight: 700;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -1089,6 +1102,7 @@ section {
 
   .footer__contacts-wrapper .btn-contact {
     width: 35%;
+    text-align: center;
   }
 }
 
