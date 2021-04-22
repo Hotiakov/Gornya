@@ -14,8 +14,8 @@ $(document).ready(function () {
 		$(".create__images-item").removeClass('active');
 		$(this).addClass('active');
 		let clickId = $(this).attr('id');
-		$('.create__image img').attr('src', "img/create/" + clickId + ".jpg");
-		$('.create__image source').attr('srcset', "img/create/" + clickId + ".webp");
+		$('.create__image img:first').attr('src', "img/create/" + clickId + ".jpg");
+		$('.create__image source:first').attr('srcset', "img/create/" + clickId + ".webp");
 	});
 	$('a[href^="#"').on('click', function () {
 
