@@ -178,7 +178,7 @@ section {
   bottom: -18%;
   z-index: 2;
   left: 100%;
-  width: 100%;
+  width: 80%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -594,7 +594,7 @@ section {
 }
 
 .move {
-  padding-bottom: 24rem;
+  padding-bottom: 20rem;
   background: url("../img/move/move-lady.jpg") right top/30% no-repeat;
 }
 
@@ -1100,12 +1100,25 @@ section {
 
 @media (max-width: 991px) {
   .header__prizes {
-    bottom: -10%;
+    bottom: -18%;
   }
 
   .hero__text {
     background: url("");
-    margin-top: 30px;
+    margin-top: 0;
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .hero__action {
+    font-size: 3rem;
   }
 
   .create-wrapper {
@@ -1340,16 +1353,17 @@ section {
     text-align: center;
   }
 
-  .hero__subtitle {
-    font-size: 4rem;
-  }
-
   .hero__action {
     margin-top: 40px;
   }
 
   .btn-contact {
     font-size: 2rem;
+  }
+
+  .support {
+    padding-top: 5.1rem;
+    margin-bottom: 7rem;
   }
 
   .support__content {
@@ -1379,8 +1393,16 @@ section {
     width: 100%;
   }
 
+  .create {
+    padding-bottom: 7rem;
+  }
+
   .create__image {
     width: 100%;
+  }
+
+  .move {
+    padding-bottom: 7rem;
   }
 
   .move .btn-contact {
