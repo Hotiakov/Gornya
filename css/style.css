@@ -61,6 +61,7 @@ section {
 
 .header {
   position: relative;
+  padding-bottom: 88px;
   z-index: 10;
   background: url("../img/header/header-bg.jpg") center/cover no-repeat;
 }
@@ -163,7 +164,6 @@ section {
 }
 
 .header__main {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +175,7 @@ section {
 
 .header__prizes {
   position: absolute;
-  bottom: -18%;
+  bottom: -15%;
   z-index: 2;
   left: 100%;
   width: 80%;
@@ -251,6 +251,10 @@ section {
 }
 
 .hero__action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   margin: 0;
   padding: 2.5rem 0;
   font-size: 3.5rem;
@@ -1107,6 +1111,10 @@ section {
 @media (max-width: 1200px) {
   html {
     font-size: 9px;
+  }
+
+  .hero__subtitle {
+    font-size: 5rem;
   }
 
   .hero__wave {
