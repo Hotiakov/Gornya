@@ -61,7 +61,7 @@ section {
 
 .header {
   position: relative;
-  padding-bottom: 88px;
+  padding-bottom: 8.5rem;
   z-index: 10;
   background: url("../img/header/header-bg.jpg") center/cover no-repeat;
 }
@@ -231,7 +231,7 @@ section {
   margin-top: 10px;
   margin-left: 3rem;
   width: 50%;
-  background: url("../img/header/girl.png") bottom right/80% no-repeat;
+  background: url("../img/header/girl.png") bottom right/90% no-repeat;
 }
 
 .hero__title {
@@ -1136,7 +1136,7 @@ section {
   }
 
   .hero__text {
-    background: url("");
+    background: url("../img/header/girl.png") bottom right/75% no-repeat;
     margin-top: 0;
   }
 
@@ -1362,6 +1362,10 @@ section {
     font-size: 7px;
   }
 
+  .header {
+    padding-bottom: 14rem;
+  }
+
   .header__prizes {
     left: 0;
     bottom: 0;
@@ -1390,6 +1394,7 @@ section {
   }
 
   .hero__text {
+    background: url("");
     width: 100%;
     text-align: center;
   }
@@ -1547,7 +1552,7 @@ section {
 }
 @supports (-webkit-appearance:none){
 .header{background:url("../img/header/header-bg.webp") center/cover no-repeat}
-.hero__text{background:url("../img/header/girl.webp") bottom right/80% no-repeat}
+.hero__text{background:url("../img/header/girl.webp") bottom right/90% no-repeat}
 .support-wrapper{background:url("../img/support/support-bg.webp") right top/80% no-repeat}
 .create{background:url("../img/create/create-bg.webp") top/cover no-repeat}
 .create__discription .rules span::before{background:url(../img/create/icons/ins.svg)}
@@ -1580,7 +1585,7 @@ section {
  @media (max-width: 991px){
 
 @supports (-webkit-appearance:none){
-.hero__text{background:url("")}
+.hero__text{background:url("../img/header/girl.webp") bottom right/75% no-repeat}
 .move{background:url("../img/move/move-lady.webp") right top/40% no-repeat}
 }
 
@@ -1605,7 +1610,7 @@ section {
  @media (max-width: 767px){
 
 @supports (-webkit-appearance:none){
-
+.hero__text{background:url("")}
 }
 
 }
