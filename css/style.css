@@ -441,6 +441,11 @@ section {
   margin-left: auto;
 }
 
+.create__discription .rule {
+  font-size: 1.8rem;
+  color: #22586B;
+}
+
 .create__discription h4 {
   margin-top: 25px;
   font-size: 3rem;
