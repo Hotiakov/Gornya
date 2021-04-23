@@ -279,10 +279,16 @@ section {
   background: linear-gradient(180deg, #33A0DE 0%, #1B55DC 100%);
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn-contact:active {
   color: #fff;
+}
+
+.btn-contact:hover {
+  background: none;
+  background-color: #4FBEE4;
 }
 
 .support {
@@ -421,9 +427,18 @@ section {
           flex: 1 0 50%;
 }
 
-.create__discription p {
-  font-size: 2rem;
-  color: #fff;
+.create__discription .everyone_know {
+  font-size: 1.6rem;
+  color: #22586B;
+  background-color: #fff;
+  margin-left: 35px;
+  padding: 10px;
+}
+
+.create__discription .btn-contact {
+  width: 30%;
+  margin: 15px 0;
+  margin-left: auto;
 }
 
 .create__discription h4 {
@@ -482,6 +497,10 @@ section {
   top: 0;
   height: 25px;
   width: 25px;
+}
+
+.create__discription .rules .li-0::before {
+  background: url(../img/create/icons/0.svg);
 }
 
 .create__discription .rules .li-1::before {
@@ -1153,6 +1172,15 @@ section {
     text-align: center;
   }
 
+  .create__discription .everyone_know {
+    margin: 0;
+  }
+
+  .create__discription .btn-contact {
+    margin: 15px auto;
+    width: 50%;
+  }
+
   .create__rules {
     margin-bottom: 50px;
     -webkit-box-ordinal-group: 2;
@@ -1401,6 +1429,12 @@ section {
     width: 100%;
   }
 
+  .create__discription .btn-contact {
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
   .move {
     padding-bottom: 7rem;
   }
@@ -1504,6 +1538,7 @@ section {
 .support-wrapper{background:url("../img/support/support-bg.webp") right top/80% no-repeat}
 .create{background:url("../img/create/create-bg.webp") top/cover no-repeat}
 .create__discription .rules span::before{background:url(../img/create/icons/ins.svg)}
+.create__discription .rules .li-0::before{background:url(../img/create/icons/0.svg)}
 .create__discription .rules .li-1::before{background:url(../img/create/icons/1.svg)}
 .create__discription .rules .li-2::before{background:url(../img/create/icons/2.svg)}
 .create__discription .rules .li-3::before{background:url(../img/create/icons/3.svg)}
